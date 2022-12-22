@@ -36,13 +36,14 @@ class TripScreen(carContext: CarContext, private val tripId: Int) : Screen(carCo
                         image = carContext.iconCompat(R.drawable.ic_test_icon),
                         onClick = { screenManager.push(TripPoiGroupScreen(carContext, it.id)) },
                     ),
+                ) + trip.tripParts.map {
                     rowTemplate(
                         title = it.title,
                         description = it.description,
                         image = carContext.iconCompat(R.drawable.ic_test_icon),
                         onClick = { screenManager.push(TripDetailed(carContext, it.id)) },
-                    ),
-                )
+                    )
+                }
             )
         }
     )

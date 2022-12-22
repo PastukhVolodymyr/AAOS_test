@@ -227,4 +227,63 @@ fun mockTrips() = listOf(
             )
         ),
     ),
+    Trip(
+        id = 4,
+        title = "Some another very interesting Trip where u end your life",
+        days = 3,
+        totalKm = 345.0,
+        author = "Euna Jacobs",
+        startCity = "Detroit",
+        intro = TripIntro(
+            title = "Intro from Euna Jacobs",
+            description = "traveling is coooooool!!! 3 days from Detroit, 345 rm total, by Euna Jacobs"
+                    + "3 days from Detroit, 345 rm total, by Euna Jacobs3 days from Detroit, 345 rm total, by Euna Jacobs",
+            audio = "1m39s"
+        ),
+        tripPoi = TripPoiGroup(
+            title = " 5 Iconic Places in the Guide",
+            listPoi = listOf(
+                TripPoi(
+                    id = 1,
+                    title = "Parkeerplaats",
+                    minutes = 15,
+                    distance = 1.5,
+                    type = "Attraction",
+                    visited = true,
+                ),
+                TripPoi(
+                    id = 2,
+                    title = "Downtown Diner",
+                    minutes = 15,
+                    distance = 1.5,
+                    type = "Restaurant",
+                    visited = false,
+                ),
+                TripPoi(
+                    id = 1,
+                    title = "Glory Memorial",
+                    minutes = 15,
+                    distance = 1.5,
+                    type = "Attraction",
+                    visited = false,
+                ),
+            ),
+        ),
+        tripParts = listOf(
+            TripPart(
+                id = 1,
+                title = "Day 1, Meeting Seals on Texas",
+                places = 10,
+                distanceDrive = 162.1,
+                distanceWalk = 1.9,
+            ),
+            TripPart(
+                id = 1,
+                title = "Day 1, Meeting Seals on Texas",
+                places = 10,
+                distanceDrive = 162.1,
+                distanceWalk = 1.9,
+            )
+        ),
+    ),
 )
